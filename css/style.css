@@ -1,0 +1,137 @@
+.header-wrapper {
+  position: static;
+  top: 0;
+  width: 100%; }
+
+header {
+  height: 50px;
+  width: 90%;
+  margin: 0 5%; }
+
+body {
+  margin: 0;
+  background-color: #fdf6e3;
+  font-size: 7px; }
+
+.main-wrapper {
+  background-color: #002b36;
+  width: 100%;
+  position: static;
+  border-radius: 1em;
+  box-shadow: 0 0 2em black; }
+
+.hex-container {
+  position: relative;
+  width: 10em;
+  height: 90em;
+  margin: 0 auto; }
+
+#hex-01, #hex-02, #hex-03, #hex-04, #hex-05, #hex-06, #hex-07 {
+  position: absolute;
+  top: 35em; }
+
+#hex-08, #hex-09, #hex-10, #hex-11 {
+  position: absolute;
+  top: 45em; }
+
+#hex-12, #hex-13, #hex-14, #hex-15, #hex-16 {
+  position: absolute;
+  top: 25em; }
+
+#hex-17, #hex-18 {
+  position: absolute;
+  top: 55em; }
+
+#hex-19, #hex-20, #hex-21 {
+  position: absolute;
+  top: 15em; }
+
+#hex-22, #hex-23, #hex-24 {
+  position: absolute;
+  top: 65em; }
+
+#hex-25, #hex-26, #hex-27 {
+  position: absolute;
+  top: 5em; }
+
+#hex-28 {
+  position: absolute;
+  top: 75em; }
+
+#hex-16 {
+  right: 42em; }
+
+#hex-06 {
+  right: 36em; }
+
+#hex-15, #hex-26 {
+  right: 30em; }
+
+#hex-04, #hex-17, #hex-20 {
+  right: 24em; }
+
+#hex-14, #hex-22 {
+  right: 18em; }
+
+#hex-02 {
+  right: 12em; }
+
+#hex-08, #hex-12 {
+  right: 6em; }
+
+#hex-09, #hex-13 {
+  left: 6em; }
+
+#hex-03 {
+  left: 12em; }
+
+#hex-10, #hex-23, #hex-25 {
+  left: 18em; }
+
+#hex-05, #hex-18, #hex-21, #hex-28 {
+  left: 24em; }
+
+#hex-11, #hex-24, #hex-27 {
+  left: 30em; }
+
+#hex-07 {
+  left: 36em; }
+
+.hexagon {
+  position: relative;
+  width: 10em;
+  height: 5.774em;
+  background-color: #073642;
+  margin: 2.887em 0;
+  box-shadow: 0 0 2em #b58900; }
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 7.071em;
+  height: 7.071em;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 1.46447em;
+  box-shadow: 0 0 2em #b58900; }
+
+.hexagon:before {
+  top: -3.53553em; }
+
+.hexagon:after {
+  bottom: -3.53553em; }
+
+/*cover up extra shadows*/
+.hexagon span {
+  display: block;
+  position: absolute;
+  top: 0em;
+  left: 0;
+  width: 10em;
+  height: 5.77350em;
+  z-index: 2;
+  background: inherit; }
