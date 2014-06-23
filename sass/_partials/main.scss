@@ -1,4 +1,13 @@
-body{
+/* Variables */
+
+$rows: 8;
+$columns: 14;
+$hex-width: 70px;
+$margin-width: 5px;
+$column-width: ($hex-width + ($margin-width * 2)) / 2;
+
+
+body {
   margin: 0;
   background-color: $base3;
   font-size:7px;
@@ -7,10 +16,8 @@ body{
 .main-wrapper{
   background-color: $base03;
   width: 100%;
-  position: static;
   border-radius: 1em;
   box-shadow: 0 0 2em rgba(0,0,0,1);
-
 }
 
 .hex-container{
@@ -18,54 +25,21 @@ body{
   width: 10em;
   height: 90em;
   margin: 0 auto;
+  width: ($columns * $column-width) + $column-width;
 
-}
-
-//hexagon rows//
-#hex-01, #hex-02, #hex-03, #hex-04, #hex-05, #hex-06, #hex-07{
-  position: absolute;
-  top: 35em;
-}
-#hex-08, #hex-09, #hex-10, #hex-11{
-  position: absolute;
-  top: 45em;
-}
-#hex-12, #hex-13, #hex-14, #hex-15, #hex-16 {
-  position: absolute;
-  top: 25em;
-}
-#hex-17, #hex-18{
-  position: absolute;
-  top: 55em;
-}
-#hex-19, #hex-20, #hex-21{
-  position: absolute;
-  top: 15em;
-}
-#hex-22, #hex-23, #hex-24{
-  position: absolute;
-  top: 65em;
-}
-#hex-25, #hex-26, #hex-27{
-  position: absolute;
-  top: 5em;
-}
-#hex-28{
-  position: absolute;
-  top: 75em;
+  .hexagon {
+    position: absolute;
+  }
 }
 
-//hexagon columns//
-#hex-16 {right: 42em;}
-#hex-06 {right: 36em;}
-#hex-15, #hex-26 {right: 30em;}
-#hex-04, #hex-17, #hex-20 {right: 24em;}
-#hex-14, #hex-22 {right: 18em;}
-#hex-02 {right: 12em;}
-#hex-08, #hex-12 {right: 6em;}
-#hex-09, #hex-13 {left: 6em;}
-#hex-03 {left: 12em;}
-#hex-10, #hex-23, #hex-25 {left: 18em;}
-#hex-05, #hex-18, #hex-21, #hex-28 {left: 24em;}
-#hex-11, #hex-24, #hex-27 {left: 30em;}
-#hex-07 {left: 36em;}
+@for $i from 1 through $rows {
+  .row-#{$i} {
+    top: 5 + (($i - 1) *10) + em;
+  }
+}
+
+@for $i from 1 through $columns {
+  .column-#{$i} {
+    left: ($i - 1) * $column-width + $margin-width
+  }
+}

@@ -1,9 +1,9 @@
 .hexagon {
   position: relative;
-  width: 10em;
-  height: 5.774em;
+  width: 70px;
+  height: 40px;
   background-color: $base02;
-  margin: 2.887em 0;
+  margin: 20px 0;
   box-shadow: 0 0 2em rgba(181,137,0,1);
 }
 
@@ -34,10 +34,10 @@
 .hexagon span {
   display: block;
   position: absolute;
-  top:0em;
+  top: 0em;
   left: 0;
-  width:10em;
-  height:5.77350em;
+  width: 10em;
+  height: 5.77350em;
   z-index: 2;
   background: inherit;
 }
