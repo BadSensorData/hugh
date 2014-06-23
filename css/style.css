@@ -8,10 +8,33 @@ header {
   width: 90%;
   margin: 0 5%; }
 
+/*.portrait-guide{
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  height: 568px;
+  width: 320px;
+  border-color: red;
+  border-style: solid;
+  z-index: 0;
+}
+
+.landscape-guide{
+  position: fixed;
+  top: 0;
+  height: 320px;
+  width: 568px;
+  border-color: blue;
+  border-style: solid;
+  z-index: 0;
+}
+*/
 body {
   margin: 0;
   background-color: #fdf6e3;
-  font-size: 7px; }
+  font-family: helvetica;
+  font-style: narrow;
+  font-size: 16px; }
 
 .main-wrapper {
   background-color: #002b36;
@@ -22,108 +45,132 @@ body {
 
 .hex-container {
   position: relative;
-  width: 10em;
-  height: 90em;
+  width: 2.5em;
+  height: 15.6em;
   margin: 0 auto; }
 
-#hex-01, #hex-02, #hex-03, #hex-04, #hex-05, #hex-06, #hex-07 {
+#hex-07, #hex-14, #hex-22 {
   position: absolute;
-  top: 35em; }
+  top: 0.78em; }
 
-#hex-08, #hex-09, #hex-10, #hex-11 {
+#hex-02, #hex-08, #hex-13, #hex-16, #hex-17 {
   position: absolute;
-  top: 45em; }
+  top: 3.38em; }
 
-#hex-12, #hex-13, #hex-14, #hex-15, #hex-16 {
+#hex-01, #hex-03, #hex-06, #hex-09, #hex-12, #hex-21 {
   position: absolute;
-  top: 25em; }
+  top: 5.98em; }
 
-#hex-17, #hex-18 {
+#hex-04, #hex-05, #hex-11, #hex-15, #hex-18, #hex-20 {
   position: absolute;
-  top: 55em; }
+  top: 8.58em; }
 
-#hex-19, #hex-20, #hex-21 {
+#hex-10, #hex-19 {
   position: absolute;
-  top: 15em; }
+  top: 11.18em; }
 
-#hex-22, #hex-23, #hex-24 {
-  position: absolute;
-  top: 65em; }
+#hex-21 {
+  left: -12em; }
 
-#hex-25, #hex-26, #hex-27 {
-  position: absolute;
-  top: 5em; }
+#hex-22 {
+  left: -10.5em; }
 
-#hex-28 {
-  position: absolute;
-  top: 75em; }
+#hex-20 {
+  left: -9em; }
 
-#hex-16 {
-  right: 42em; }
+#hex-16, #hex-19 {
+  left: -7.5em; }
+
+#hex-12 {
+  left: -6em; }
+
+#hex-11, #hex-13 {
+  left: -4.5em; }
 
 #hex-06 {
-  right: 36em; }
+  left: -3em; }
 
-#hex-15, #hex-26 {
-  right: 30em; }
+#hex-05, #hex-07 {
+  left: -1.5em; }
 
-#hex-04, #hex-17, #hex-20 {
-  right: 24em; }
+#hex-01 {
+  left: 0; }
 
-#hex-14, #hex-22 {
-  right: 18em; }
+#hex-02, #hex-04 {
+  left: 1.5em; }
 
-#hex-02 {
-  right: 12em; }
+#hex-03, #hex-10 {
+  left: 3em; }
 
-#hex-08, #hex-12 {
-  right: 6em; }
+#hex-08 {
+  left: 4.5em; }
 
-#hex-09, #hex-13 {
+#hex-09, #hex-14 {
   left: 6em; }
 
-#hex-03 {
+#hex-15 {
+  left: 7.5em; }
+
+#hex-xx {
+  left: 9em; }
+
+#hex-17 {
+  left: 10.5em; }
+
+#hex-18 {
   left: 12em; }
 
-#hex-10, #hex-23, #hex-25 {
-  left: 18em; }
+#hex-12 {
+  background-color: #b58900; }
 
-#hex-05, #hex-18, #hex-21, #hex-28 {
-  left: 24em; }
+#hex-13 {
+  background-color: #cb4b16; }
 
-#hex-11, #hex-24, #hex-27 {
-  left: 30em; }
+#hex-06 {
+  background-color: #dc322f; }
 
-#hex-07 {
-  left: 36em; }
+#hex-01 {
+  background-color: #d33682; }
+
+#hex-05 {
+  background-color: #6c71c4; }
+
+#hex-03 {
+  background-color: #268bd2; }
+
+#hex-04 {
+  background-color: #2aa198; }
+
+#hex-15 {
+  background-color: #859900; }
 
 .hexagon {
   position: relative;
-  width: 10em;
-  height: 5.774em;
+  width: 2.5em;
+  height: 1.4435em;
   background-color: #073642;
-  margin: 2.887em 0;
-  box-shadow: 0 0 2em #b58900; }
+  margin: 0.72175em 0;
+  box-shadow: 0 0 0.5em rgba(253, 246, 227, 0.6); }
 
 .hexagon:before,
 .hexagon:after {
   content: "";
   position: absolute;
   z-index: 1;
-  width: 7.071em;
-  height: 7.071em;
+  width: 1.76775em;
+  height: 1.76775em;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
-  left: 1.46447em;
-  box-shadow: 0 0 2em #b58900; }
+  left: 0.36662em;
+  box-shadow: 0 0 0.5em rgba(253, 246, 227, 0.6); }
 
 .hexagon:before {
-  top: -3.53553em; }
+  top: -0.88388em; }
 
 .hexagon:after {
-  bottom: -3.53553em; }
+  bottom: -0.88388em; }
 
 /*cover up extra shadows*/
 .hexagon span {
@@ -131,7 +178,10 @@ body {
   position: absolute;
   top: 0em;
   left: 0;
-  width: 10em;
-  height: 5.77350em;
+  width: 2.5em;
+  height: 1.44338em;
   z-index: 2;
   background: inherit; }
+
+.hexagon:hover, .hexagon:hover:before, .hexagon:hover:after {
+  box-shadow: 0 0 1em #fdf6e3; }
