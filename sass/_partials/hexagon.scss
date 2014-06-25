@@ -5,41 +5,41 @@
   background-color: $hexColour;
   margin: 0.2887*$hexSize 0;
   box-shadow: 0 0 0.2*$hexSize $hexShadow;
-}
 
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 0.7071*$hexSize;
-  height: 0.7071*$hexSize;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 0.146647*$hexSize;
-  box-shadow: 0 0 0.2*$hexSize $hexShadow;
-}
+  span{
+    display: block;
+    position: absolute;
+    top: 0em;
+    left: 0;
+    width: $hexSize;
+    height: 0.577350*$hexSize;
+    z-index: 2;
+    background: inherit;
+  }
 
-.hexagon:before {
-  top: -0.353553*$hexSize;
-}
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 0.7071*$hexSize;
+    height: 0.7071*$hexSize;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 0.146647*$hexSize;
+    box-shadow: 0 0 0.2*$hexSize $hexShadow;
+  }
 
-.hexagon:after {
-  bottom: -0.353553*$hexSize;
-}
+  &:before {
+    top: -0.353553*$hexSize;
+  }
 
-/*cover up extra shadows*/
-.hexagon span {
-  display: block;
-  position: absolute;
-  top: 0em;
-  left: 0;
-  width: $hexSize;
-  height: 0.577350*$hexSize;
-  z-index: 2;
-  background: inherit;
+  &:after {
+    bottom: -0.353553*$hexSize;
+  }
+
 }
 
 .hexagon:hover,.hexagon:hover:before,.hexagon:hover:after{
