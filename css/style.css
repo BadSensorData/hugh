@@ -176,6 +176,5 @@ body {
     top: -0.88388em; }
   .hexagon:after {
     bottom: -0.88388em; }
-
-.hexagon:hover, .hexagon:hover:before, .hexagon:hover:after {
-  box-shadow: 0 0 1em #fdf6e3; }
+  .hexagon:hover:before, .hexagon:hover:after {
+    box-shadow: 0 0 1em #fdf6e3; }

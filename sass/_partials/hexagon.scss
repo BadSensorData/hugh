@@ -40,8 +40,10 @@
     bottom: -0.353553*$hexSize;
   }
 
-}
-
-.hexagon:hover,.hexagon:hover:before,.hexagon:hover:after{
-  box-shadow: 0 0 0.4*$hexSize $hexShadowHighlight;
+  &:hover {
+    &:before,
+    &:after {
+      box-shadow: 0 0 0.4*$hexSize $hexShadowHighlight;
+    }
+  }
 }
