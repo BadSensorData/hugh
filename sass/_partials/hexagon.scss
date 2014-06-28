@@ -40,10 +40,9 @@
     bottom: -0.353553*$hexSize;
   }
 
-  &:hover {
-    &:before,
-    &:after {
-      box-shadow: 0 0 0.4*$hexSize $hexShadowHighlight;
-    }
+  &:hover,
+  &:hover:before,
+  &:hover:after {
+    box-shadow: 0 0 0.4*$hexSize $hexShadowHighlight;
   }
 }
